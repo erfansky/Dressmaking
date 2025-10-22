@@ -44,7 +44,7 @@ This project provides a secure API for customers, products, orders, and properti
 
 ## ⚙️ Installation
 
-### 1️⃣ Backend Setup
+### Backend Setup
 
 ```bash
 # Clone repo
@@ -65,3 +65,20 @@ cp .env.example .env
 # Run migrations and server
 python manage.py migrate
 python manage.py runserver 0.0.0.0:8000
+
+```
+### Frontend Setup
+
+```bash
+cd ../dressmaking-pwa
+
+# Install dependencies
+npm install
+
+# Configure API base URL in src/api/api.js
+# Example:
+# const BASE_URL = "http://192.168.1.9:8000/api/";
+
+# Run development server
+npm run dev
+```
